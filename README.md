@@ -12,7 +12,8 @@ Even through ICS claimed the sercurity attibute hold by its protocol, but that's
 
 ICS uses client semantics in local machine to verify the consensus transcript & state sub-components of another machine, as for dpos machine, that's mainly validator set at present of another machine. Whereas the rules in ICS protocol can't guaranty the validator set recorded in local machine client is the latest of that in another machine, instead of laid-off validator set, which can cause security problems.
 
-![figure](x/sentry/spec/asset/figure.png)
+ <img src="x/sentry/spec/asset/figure.png" width = "300" height = "200" align=center />
+
 Figure-1: illustration
   
 In figure-1, at time 3, validators 2、3、4 are laid-off in another machine and can be free to sign arbitrary messages to local machine. And local machine would take that into effect because the validator set in client admitting validators 2、3、4，which is a critial situation in ICS.
